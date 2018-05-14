@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 
 // home page
 app.get('/', function(req,res, next){
-
+    console.log("user online");
     // res.render('index', {title:'To-Do-List'});
     // handling render for redirected "data" from todo/add handler
     res.render('index', {data: req.session.todoapp});
@@ -66,4 +66,4 @@ app.get('/todo/delete/:id',function(req,res){
     res.redirect('/');
 });
 
-app.listen(8080);
+app.listen(8100, function(){console.log("server has begun");});
