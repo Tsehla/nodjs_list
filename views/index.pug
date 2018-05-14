@@ -1,12 +1,13 @@
 extends layout
 
 block content
-    h1 To do List
+    h1 To do List 
+    p#fisrt-paragraph   Use form below to add your tasks
     
     form(method="POST", action="todo/add")
         input(type = "text",placeholder="Add New Todo", name="task")
         button.btn.btn-primary(type="submit") Submit  
-    ul
+    ol
     
         each data2 in data 
             li= data2

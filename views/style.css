@@ -1,0 +1,28 @@
+body{
+    background-color: #232B2B;    
+}
+form input {
+    border: 0px;
+}
+input::placeholder {
+    color : blue;
+}
+form button{
+    color : white;
+    background-color:forestgreen;
+    border: 0px;
+}
+h1 {
+    color : #E3AE57;
+    text-decoration: underline;
+}
+#fisrt-paragraph    {
+        color:aliceblue;
+    }
+li{
+    color :white ;
+}
+li a{ 
+    
+    color : #DC3D24
+}
